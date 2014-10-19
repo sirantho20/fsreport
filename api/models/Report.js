@@ -11,7 +11,7 @@ module.exports = {
     
     reportId : { stype: 'integer', primaryKey:true, autoIncrement: true },
 
-    user : { type: 'string', required:true, model:'User' },
+    user : { type: 'integer', required:true, model:'User' },
 
     startDate : { type: 'datetime', required: true },
 

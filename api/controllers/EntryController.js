@@ -7,22 +7,24 @@
 
 module.exports = {
 	
-	add: function(req, res){
+	new: function(req, res){
 
 		res.view();
 	},
 	create: function(req, res, next){
 
-		User.create(req.params.all(), function (err, user){
+		Entry.create(req.params.all(), function (err, user){
 			if (err) {
 				req.session.flash = { err: err }
 
 				return next(err);
 			}
 
-			res.redirect("/");
+			//ntry.watch(req);
+
+			res.redirect('/entry/new');
 		});
-	},
+	}/*,
 	index: function(req, res, next){
 		User.find(function foundUsers(err, users){
 
@@ -30,6 +32,15 @@ module.exports = {
 
 			res.view({users: users});
 		});
-	}
+	},
+
+	subscribe: function(req, res){
+		User.find(function gotUsers(err, users){
+			User.subscribe(req.socket, users);
+		});
+
+		res.send(200,{user: users});
+	} */
 };
+
 
