@@ -23,14 +23,6 @@ module.exports = {
     reports : { collection: 'Report' },
 
     gender : { type: 'string', enum: ['male','female'] },
-
-    email : { type: 'string', required: true, email: true  },
-
-    passWord : { type: 'string', required: true  },
-    
-    email : { type: 'string', required: true, email: true  },
-
-    passWord : { type: 'string', required: true  },
     
     isAdmin : { type: 'boolean', defaultsTo: false }
     

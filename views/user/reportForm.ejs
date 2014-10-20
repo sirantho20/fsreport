@@ -1,0 +1,38 @@
+<form role="form">
+
+		<div class="form-group">
+			<label for="startdate"> Start date/time</label>
+			<div class='input-group date' id='startdatetime'>
+			<input type="text" class="form-control" id="startdatetime" data-date-format="YYYY/MM/DD hh:mm AM/PM" name="date" placeholder="Select date" />
+			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+		</div>
+		</div>
+		<br />
+		<div class="form-group">
+			<label for="endtime"> Closing time</label>
+			<div class='input-group date' id='endtime'>
+			<input type="text" class="form-control" name="endtime" placeholder="time you closed" />
+				<span class="input-group-addon"><span class="glyphicon glyphicon-clock"></span>
+	                    </span>
+		</div>
+		</div>
+		<br />
+		  <div class="form-group">
+		    <label for="magazines">Magazines</label>
+		    <input type="number" name="magazines" class="form-control bfh-number" id="magazines" placeholder="number of magazines" />
+		  </div>
+		  <div class="form-group">
+		  	<label for="tracts">Tracts & Brochures</label>
+		  	<input type="number" name="tracts" class="form-control bfh-number" id="tracts" placeholder="number of tracts/brochures" />
+		  </div>
+		  <div class="form-group">
+		    <label for="bs">Bible Studies</label>
+		    <input type="number" class="form-control bfh-number" name="bs" id="bs" placeholder="Number of bibile studies conducted" />
+		  </div>
+		  <div class="form-group">
+		    <label for="rv">Return visits</label>
+		    <input type="number" class="form-control bfh-number" name="rv" id="rv" placeholder="Number of returns" />
+		  </div>
+		  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

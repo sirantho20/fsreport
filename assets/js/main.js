@@ -1,7 +1,9 @@
-io.socket.get("/entry", function(resData, jwres) { 
-	console.log(resData);
-});
+            $(function () {
+                $('#startdatetime').datetimepicker({
+                	sideBySide: true
+                });
 
-/*io.socket.on('message', function(msg){
-	console.log(msg);
-}); */
+                $('#endtime').datetimepicker({
+                    pickDate: false
+                });
+            });

@@ -24,14 +24,9 @@ module.exports = {
 
 			res.redirect('/entry/new');
 		});
-	}/*,
+	},
 	index: function(req, res, next){
-		User.find(function foundUsers(err, users){
-
-			if (err) return next(err);
-
-			res.view({users: users});
-		});
+		res.view();
 	},
 
 	subscribe: function(req, res){
@@ -40,7 +35,7 @@ module.exports = {
 		});
 
 		res.send(200,{user: users});
-	} */
+	} 
 };
 
 
